@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Model | DiaVista</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Dia<span>Vista</span>
+    </div>
+
+    <nav>
+
+        <a href="{{ url_for('home') }}">
+            Home
+        </a>
+
+        <a href="{{ url_for('assessment') }}">
+            Assessment
+        </a>
+
+        <a href="{{ url_for('model_page') }}"
+           class="active">
+            About Model
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="model-section">
+
+    <div class="model-header">
+
+        <p class="eyebrow">
+            ABOUT THE MODEL
+        </p>
+
+        <h1>
+            Understanding the
+            <span>prediction model.</span>
+        </h1>
+
+        <p>
+            DiaVista uses a Gaussian Naive Bayes machine learning
+            model to estimate diabetes risk based on selected
+            health parameters.
+        </p>
+
+    </div>
+
+
+    <!-- MODEL OVERVIEW -->
+
+    <div class="model-overview">
+
+        <div class="model-main-card">
+
+            <p class="card-label">
+                MACHINE LEARNING ALGORITHM
+            </p>
+
+            <h2>
+                Gaussian Naive Bayes
+            </h2>
+
+            <p>
+                Gaussian Naive Bayes is a probabilistic classification
+                algorithm that estimates the probability of an outcome
+                based on the input features.
+            </p>
+
+            <p>
+                In this project, the model analyzes several health
+                parameters and estimates the probability associated
+                with the diabetes classification.
+            </p>
+
+        </div>
+
+
+        <div class="model-stat-card">
+
+            <div class="stat-item">
+
+                <span>
+                    Model Accuracy
+                </span>
+
+                <strong>
+                    75.45%
+                </strong>
+
+            </div>
+
+            <div class="stat-item">
+
+                <span>
+                    Training Split
+                </span>
+
+                <strong>
+                    80 / 20
+                </strong>
+
+            </div>
+
+            <div class="stat-item">
+
+                <span>
+                    Algorithm
+                </span>
+
+                <strong>
+                    Gaussian NB
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HOW MODEL WORKS -->
+
+    <section class="model-process">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                HOW IT WORKS
+            </p>
+
+            <h2>
+                From input data to prediction.
+            </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Input Data
+                </h3>
+
+                <p>
+                    The user provides eight health-related
+                    parameters required by the model.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Probability Calculation
+                </h3>
+
+                <p>
+                    Gaussian Naive Bayes calculates the probability
+                    of each possible classification based on the
+                    submitted features.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Classification
+                </h3>
+
+                <p>
+                    The model selects the classification with the
+                    highest estimated probability and returns the
+                    prediction to the website.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                MODEL FEATURES
+            </p>
+
+            <h2>
+                Health parameters used by the model.
+            </h2>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature-item">
+                <strong>01</strong>
+                <span>Pregnancies</span>
+            </div>
+
+            <div class="feature-item">
+                <strong>02</strong>
+                <span>Glucose</span>
+            </div>
+
+            <div class="feature-item">
+                <strong>03</strong>
+                <span>Blood Pressure</span>
+            </div>
+
+            <div class="feature-item">
+                <strong>04</strong>
+                <span>Skin Thickness</span>
+            </div>
+
+            <div class="feature-item">
+                <strong>05</strong>
+                <span>Insulin</span>
+            </div>
+
+            <div class="feature-item">
+                <strong>06</strong>
+                <span>BMI</span>
+            </div>
+
+            <div class="feature-item">
+                <strong>07</strong>
+                <span>Diabetes Pedigree Function</span>
+            </div>
+
+            <div class="feature-item">
+                <strong>08</strong>
+                <span>Age</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DATASET -->
+
+    <section class="dataset-section">
+
+        <div class="dataset-card">
+
+            <div>
+
+                <p class="eyebrow">
+                    DATASET
+                </p>
+
+                <h2>
+                    Healthcare Diabetes Dataset
+                </h2>
+
+                <p>
+                    The model was trained using a healthcare diabetes
+                    dataset containing patient health measurements
+                    and their corresponding diabetes outcome.
+                </p>
+
+            </div>
+
+            <div class="dataset-info">
+
+                <div>
+                    <span>Features</span>
+                    <strong>8</strong>
+                </div>
+
+                <div>
+                    <span>Target</span>
+                    <strong>Outcome</strong>
+                </div>
+
+                <div>
+                    <span>Split</span>
+                    <strong>80 / 20</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+
+    <div class="disclaimer">
+
+        <strong>
+            Important:
+        </strong>
+
+        The model provides a machine-learning-based estimation
+        and is not intended to replace professional medical
+        diagnosis or clinical evaluation.
+
+    </div>
+
+
+    <div class="model-actions">
+
+        <a href="{{ url_for('assessment') }}"
+           class="primary-btn">
+
+            Try the Assessment →
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Dia-Risk — Diabetes Risk Estimation Dashboard
+    </p>
+
+</footer>
+
+</body>
+
+</html>
