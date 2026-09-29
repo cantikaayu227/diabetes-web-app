@@ -101,3 +101,4 @@ http://127.0.0.1:5000
 This project was developed as a course final project to demonstrate the implementation of a algorithm in a web-based application.
 
 The application demonstrates how health-related data can be processed using Gaussian Naive Bayes and presented through an interactive dashboard.
+Link Demo: https://drive.google.com/drive/folders/1p22vsmJoglKwZGPF01S5krSsyQbXabHL?usp=drive_link 
