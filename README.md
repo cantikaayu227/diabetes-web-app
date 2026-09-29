@@ -90,8 +90,10 @@ diabetes-web-app/
 Clone this repository:
 git clone https://github.com/USERNAME/diabetes-web-app.git
 cd diabetes-web-app
-Install the required libraries: pip install flask scikit-learn pandas numpy joblib
-Run the Flask application: python app.py
+Install the required libraries: 
+pip install flask scikit-learn pandas numpy joblib
+Run the Flask application:
+python app.py
 Then open the local address shown in the terminal, usually:
 http://127.0.0.1:5000
 
